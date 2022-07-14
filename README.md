@@ -78,7 +78,7 @@ Copy this line inside .bashrc
 export KUBECONFIG=~/.kube/config
 ```
 
-## Check Kubernetes
+## Check Kubernetes
 ```
 kubectl cluster-info
 kubectl get nodes
