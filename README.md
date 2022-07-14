@@ -5,7 +5,7 @@ Documentation install k3s. under Windows 10
 
 - Windows 10 Home or later
 
-## Install Debian WSL application
+## Install Kernel WSL application
 ```
 wsl --install -d Ubuntu
 ```
