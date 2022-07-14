@@ -64,7 +64,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/k3s.service -> /etc/
 [INFO]  systemd: Starting k3s
 ```
 
-## Configure k3s to use kubectl CLI directly
+## Configure k3s to use kubectl CLI directly
 
 ```
 mkdir .kube
@@ -78,7 +78,7 @@ Copy this line inside .bashrc
 export KUBECONFIG=~/.kube/config
 ```
 
-## Check kubernetes
+##  Check kubernetes
 ```
 kubectl cluster-info
 kubectl get nodes
