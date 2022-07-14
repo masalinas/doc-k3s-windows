@@ -1,11 +1,11 @@
 # Description
-Documentation install k3s. under Windows 10
+Documentation install k3s under Windows 10
 
 ## Dependencies
 
 - Windows 10 Home or later
 
-## Install Kernel WSL application
+## Install Kernel WSL Application (Ubuntu 20.04)
 ```
 wsl --install -d Ubuntu
 ```
@@ -84,6 +84,24 @@ kubectl cluster-info
 kubectl get nodes
 ```
 
+## Remove systemd errors
+Remove **systemd-remount-fs.service** error check device and execute the next command
+```
+mount
+sudo e2label /dev/sdb cloudimg-rootfs
+```
+
+Remove **ssh.service** error
+```
+sudo ssh-keygen -A
+```
+
+Remove **multipathd.service** error
+```
+sudo systemctl disable multipathd.service
+```
+
 ## Some links
-https://github.com/arkane-systems/genie
-https://k3s.io/
+- k3s Site: https://k3s.io/
+- WSL Genie: https://github.com/arkane-systems/genie
+- WSL Genie systemd errors:https://github.com/arkane-systems/genie/wiki/Systemd-units-known-to-be-problematic-under-WSL
