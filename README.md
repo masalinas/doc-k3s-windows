@@ -17,7 +17,7 @@ sudo apt-get install wget
 sudo apt-get install curl
 ```
 
-## add genie repository
+## Add genie repository
 ```
 wget -O /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github.io/wsl-transdebian/apt/wsl-transdebian.gpg
 
@@ -31,17 +31,17 @@ EOF
 apt update
 ```
 
-## install systemd genie
+## Install systemd genie
 ```
 sudo apt install -y systemd-genie
 ```
 
-## set Ubuntu App default app if not
+## Set Ubuntu App default app if not
 ```
 wsl -s Ubuntu
 ```
 
-## install k3s by default with only one node
+## Install k3s by default with only one node
 ```
 curl -sfL https://get.k3s.io | sh -
 
@@ -64,7 +64,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/k3s.service -> /etc/
 [INFO]  systemd: Starting k3s
 ```
 
-## configure k3s to use kubectl CLI directly
+## Configure k3s to use kubectl CLI directly
 
 ```
 mkdir .kube
@@ -78,12 +78,12 @@ Copy this line inside .bashrc
 export KUBECONFIG=~/.kube/config
 ```
 
-## check kubernetes
+## Check kubernetes
 ```
 kubectl cluster-info
 kubectl get nodes
 ```
 
-## Some links
+## Some links
 https://github.com/arkane-systems/genie
 https://k3s.io/
