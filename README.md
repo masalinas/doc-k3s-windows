@@ -109,7 +109,7 @@ kubectl cluster-info
 kubectl get nodes
 ```
 
-## Start WSL
+## Start WSL
 ```
 wsl genie -s
 ```
