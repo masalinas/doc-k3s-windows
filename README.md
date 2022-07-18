@@ -44,6 +44,23 @@ exit
 sudo apt install -y systemd-genie
 ```
 
+## Remove systemd errors
+Remove **systemd-remount-fs.service** error check device and execute the next command
+```
+mount
+sudo e2label /dev/sdb cloudimg-rootfs
+```
+
+Remove **ssh.service** error
+```
+sudo ssh-keygen -A
+```
+
+Remove **multipathd.service** error
+```
+sudo systemctl disable multipathd.service
+```
+
 ## Install k3s by default with only one node
 ```
 curl -sfL https://get.k3s.io | sh -
@@ -85,23 +102,6 @@ export KUBECONFIG=~/.kube/config
 ```
 kubectl cluster-info
 kubectl get nodes
-```
-
-## Remove systemd errors
-Remove **systemd-remount-fs.service** error check device and execute the next command
-```
-mount
-sudo e2label /dev/sdb cloudimg-rootfs
-```
-
-Remove **ssh.service** error
-```
-sudo ssh-keygen -A
-```
-
-Remove **multipathd.service** error
-```
-sudo systemctl disable multipathd.service
 ```
 
 ## Some links
