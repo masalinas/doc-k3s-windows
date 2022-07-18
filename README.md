@@ -19,7 +19,8 @@ sudo apt-get install curl
 
 ## Add genie repository
 ```
-sudo wget -O /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github.io/wsl-transdebian/apt/wsl-transdebian.gpg
+sudo su 
+wget -O /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github.io/wsl-transdebian/apt/wsl-transdebian.gpg
 
 chmod a+r /etc/apt/trusted.gpg.d/wsl-transdebian.gpg
 
@@ -29,6 +30,8 @@ deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ $(lsb_release -cs)
 EOF
 
 apt update
+
+exit
 ```
 
 ## Install systemd genie
