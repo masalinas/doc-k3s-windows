@@ -116,7 +116,7 @@ wsl genie -s
 
 ## Stop WSL
 ```
-wsl
+wsl --shutdown
 ```
 
 ## Some links
