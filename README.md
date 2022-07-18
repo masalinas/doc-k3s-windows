@@ -114,7 +114,7 @@ kubectl get nodes
 wsl genie -s
 ```
 
-## Stop WSL
+## Stop WSL
 ```
 wsl
 ```
