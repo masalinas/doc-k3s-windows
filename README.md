@@ -13,7 +13,6 @@ wsl --install -d Ubuntu
 ## install some dependencies
 ```
 sudo apt-get update
-sudo apt-get install lsb-release
 sudo apt-get install wget
 sudo apt-get install curl
 ```
