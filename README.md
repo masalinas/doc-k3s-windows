@@ -10,6 +10,11 @@ Documentation install k3s under Windows 10
 wsl --install -d Ubuntu
 ```
 
+## Set Ubuntu App default app if not
+```
+wsl -s Ubuntu
+```
+
 ## install some dependencies
 ```
 sudo apt-get update
@@ -37,11 +42,6 @@ exit
 ## Install systemd genie
 ```
 sudo apt install -y systemd-genie
-```
-
-## Set Ubuntu App default app if not
-```
-wsl -s Ubuntu
 ```
 
 ## Install k3s by default with only one node
