@@ -45,9 +45,14 @@ sudo apt install -y systemd-genie
 ```
 
 ## Remove systemd errors
-Remove **systemd-remount-fs.service** error check device and execute the next command
+
+Check mount device
 ```
 mount
+```
+
+Remove **systemd-remount-fs.service** error check device and execute the next command with the device checked previusly
+```
 sudo e2label /dev/sdb cloudimg-rootfs
 ```
 
