@@ -24,7 +24,7 @@ sudo apt-get install curl
 
 ## Add genie repository
 ```
-sudo su 
+sudo su
 wget -O /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github.io/wsl-transdebian/apt/wsl-transdebian.gpg
 
 chmod a+r /etc/apt/trusted.gpg.d/wsl-transdebian.gpg
@@ -109,7 +109,17 @@ kubectl cluster-info
 kubectl get nodes
 ```
 
+## Start WSL
+```
+wsl genie -s
+```
+
+## Stop WSL
+```
+wsl
+```
+
 ## Some links
-- k3s Site: https://k3s.io/
 - WSL Genie: https://github.com/arkane-systems/genie
 - WSL Genie systemd errors:https://github.com/arkane-systems/genie/wiki/Systemd-units-known-to-be-problematic-under-WSL
+- k3s Site: https://k3s.io/
